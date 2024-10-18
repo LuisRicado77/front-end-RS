@@ -1,41 +1,80 @@
-header {
-    
-    background-color: #3ae1ff;
-    color: white;
-    padding: 10px;
-  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ), url('../images/header.webp');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
   
-  .logo{
-    position: absolute;
-    top: 5%;
-    left: 85%;
-    transform: translate(-50%);
- 
-  }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  footer {
-    background-color: #3ae1ff;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+.logo{
+  color: #fff0dc;
+  font-size: 25px;
+  font-weight: 800;
+
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 28px;
+  color: #fff0dc;
+  display: block;
+  font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+  color: #ce9678;
+}
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  width: 25px;
+}
+
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}
   
 
  
