@@ -1,0 +1,41 @@
+header {
+    
+    background-color: #3ae1ff;
+    color: white;
+    padding: 10px;
+  }
+  
+  .logo{
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    transform: translate(-50%);
+ 
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: #3ae1ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+ 
