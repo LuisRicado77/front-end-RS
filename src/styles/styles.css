@@ -60,7 +60,7 @@ body{
   font-weight: 600;
 }
 .menu .navbar ul li a:hover{
-  color: #ce9678;
+  color: #b5a9fe;
 }
 #menu{
   display: none;
@@ -75,6 +75,32 @@ body{
   cursor: pointer;
   display: none;
 }
+
+.header-content{
+  text-align: center;
+}
   
 
- 
+ .header-content h1{
+  font-size: 75px;
+  line-height: 81px;
+  color: rgb(189, 171, 171);
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  align-items: center;
+ }
+
+ .header-content p {
+  font-size:16px;
+  color: rgba(236, 199, 199, 0.712);
+  padding: 0 250px;
+  margin-bottom: 25px;
+ }
+
+ .btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: rgb(87, 214, 223);
+  color: aliceblue;
+  text-transform: uppercase;
+ }
