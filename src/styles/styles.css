@@ -104,3 +104,142 @@ body{
   color: aliceblue;
   text-transform: uppercase;
  }
+
+ .btn-1:hover{
+  background-color: #bebada;
+ }
+
+
+ .belleza{
+  padding: 100px 0;
+  background-color: #888487;
+  position: relative;
+ }
+ .belleza-content{
+  text-align: center;
+ }
+
+ .belleza-content h2{
+  font-size: 55px;
+  line-height: 70px;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 250px;
+  margin-bottom: 15px;
+ }
+
+
+ .txt-p{
+  font-size: 16px;
+  color: #bebada;
+  padding: 0 250px;
+  margin-bottom: 35px;
+ }
+
+ .belleza-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+ }
+ .belleza-1{
+  padding: 0 25px;
+ }
+
+ .belleza-1 img{
+  width: 200px;
+ }
+
+
+ .belleza-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 400px; /* Ajusta el tamaño según sea necesario */
+  z-index: 1;
+  background-color: transparent;
+}s
+.belleza {
+  background-color: #888487;
+  position: relative;
+}
+
+ .belleza-1 h3{
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 15px;
+ }
+
+ .services{
+  background-image: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  ),url(/src/images/foto15.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+ }
+
+ .services-content{
+  text-align: center;
+ }
+ .services-content h2{
+  font-size: 55px;
+  line-height: 70px;
+  color: #fff0dc;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+ }
+
+ .services-content p{
+  font-size: 16px;
+  color: #bebada;
+  margin-bottom: 50px;
+
+ }
+
+ .services-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+ }
+
+ .services-1{
+  padding: 0 100px;
+
+ }
+
+ .services-1 img{
+  width: 25px;
+  margin-bottom: 15px;
+ }
+
+
+ .services-1 h3{
+  color: #bebada;
+  font-size: 18px;
+
+ }
+
+
+ .general{
+  display: flex;
+ }
+
+ .general-1{
+  width: 50%;
+  padding: 100px 250px 100px 100px;
+  background-color: #fff0dc;
+ }
+
+ .general-2{
+  background-image: url(/src/images/foto1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+ }
