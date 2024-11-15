@@ -30,6 +30,10 @@ body{
   display: flex;
   align-items: center;
 }
+.luz{
+  width: 300px;
+  height: 150px;
+}
 
 .menu{
   position: absolute;
@@ -39,6 +43,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+
 }
   
 .logo{
@@ -78,6 +84,7 @@ body{
 
 .header-content{
   text-align: center;
+  margin-top: 100px;
 }
   
 
@@ -112,7 +119,7 @@ body{
 
  .belleza{
   padding: 100px 0;
-  background-color: #888487;
+  background-color: #ffffff;
   position: relative;
  }
  .belleza-content{
@@ -147,7 +154,8 @@ body{
  }
 
  .belleza-1 img{
-  width: 200px;
+  width: 210px;
+  height: 200px;
  }
 
 
@@ -233,7 +241,7 @@ body{
  .general-1{
   width: 50%;
   padding: 100px 250px 100px 100px;
-  background-color: #fff0dc;
+  background-color: #93bcf9;
  }
 
  .general-2{
@@ -266,12 +274,14 @@ body{
  .blog{
   padding: 100px 0;
   text-align: center;
+  background-color: #cbd1da;
  }
 
 
 .blog-content{
   display: flex;
   justify-content: space-between;
+  
 }
 
 
@@ -281,6 +291,7 @@ body{
 
 .blog-1 img{
   width: 250px;
+  height: 320px;
   border-radius: 15px;
   margin-bottom: 15px;
 }
@@ -317,11 +328,74 @@ body{
   margin-bottom: 15px;
   
 }
+.link img{
+  width: 40px;
+
+}
 p{
   font-size: 16px;
   color: #31385f;
   margin: 25px 0 45px 0;
  }
+/* Estilos Generales */
+.nosotros {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nosotros-content {
+  text-align: center;
+  
+  background-color: #fff0dc;
+}
+
+/* Estilo para el grupo de secciones */
+.nosotros-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 40px;
+}
+
+/* Estilos para cada sección individual */
+.nosotros-item {
+  width: 400px;
+ 
+  padding: 20px;
+  height: 600px;
+  
+}
+
+.nosotros-item h1, .nosotros-item h2 {
+  margin-bottom: 50px;
+}
+
+.nosotros-item img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.nosotros-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilos para hacer el diseño de 2 columnas */
+@media (min-width: 768px) {
+  .nosotros-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nosotros-item:nth-child(1) {
+    width: 100%;
+  }
+  .nosotros-item:nth-child(2), .nosotros-item:nth-child(3) {
+    width: 48%;
+  }
+}
 
 
 
