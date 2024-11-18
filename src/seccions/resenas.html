@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acerca de Nosotros</title>
+  <title>Reseñas</title>
   <link rel="stylesheet" href="/src/styles/styles.css">
   <script src="../code/home.js" defer></script> <!-- Enlace a tu archivo JavaScript -->
 </head>
@@ -12,10 +12,72 @@
   <!-- El header se cargará dinámicamente aquí -->
   <header></header>
 
-  <main>
-    <h1>Reseñas</h1>
-    <p>Información sobre nuestra empresa y misión.</p>
+  <<main class="blog container">
+    <h2>blog</h2>
+    <p>dsfasdfsdfdsfdsfads</p>
+    <div class="blog-content">
+       <div class="blog-1">
+          <img src="/src/images/foto10.jpg" alt="">
+          <h3>Blog 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iure suscipit quas, mollitia, 
+            facere laudantium error voluptatibus odit nemo corporis 
+            qui asperiores eius obcaecati necessitatibus deserunt? Ipsa distinctio ab possimus.
+          </p>
+       </div>
+       <div class="blog-1">
+        <img src="/src/images/foto11.jpg" alt="">
+        <h3>Blog 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iure suscipit quas, mollitia, 
+          facere laudantium error voluptatibus odit nemo corporis 
+          qui asperiores eius obcaecati necessitatibus deserunt? Ipsa distinctio ab possimus.
+        </p>
+     </div>
+     <div class="blog-1">
+      <img src="/src/images/foto12.jpg" alt="">
+      <h3>Blog 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iure suscipit quas, mollitia, 
+        facere laudantium error voluptatibus odit nemo corporis 
+        qui asperiores eius obcaecati necessitatibus deserunt? Ipsa distinctio ab possimus.
+      </p>
+   </div>
+   
+    </div>
+    <a href="#" class="btn-1">info</a>
   </main>
+
+  <section class="review-section">
+    <h1 class="section-title">Deja tu Reseña</h1>
+    <p class="section-description">¡Nos encantaría saber lo que piensas de nuestro producto o servicio!</p>
+    <form class="review-form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <label for="rating">Puntuación</label>
+        <select id="rating" name="rating" required>
+          <option value="" disabled selected>Selecciona una puntuación</option>
+          <option value="5">⭐️⭐️⭐️⭐️⭐️ - Excelente</option>
+          <option value="4">⭐️⭐️⭐️⭐️ - Muy Bueno</option>
+          <option value="3">⭐️⭐️⭐️ - Bueno</option>
+          <option value="2">⭐️⭐️ - Regular</option>
+          <option value="1">⭐️ - Malo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="review">Reseña</label>
+        <textarea id="review" name="review" rows="4" placeholder="Escribe tu reseña aquí..." required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Enviar Reseña</button>
+    </form>
+  </section>
 
   <!-- El footer se cargará dinámicamente aquí -->
   <footer></footer>

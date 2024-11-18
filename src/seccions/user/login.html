@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="/src/code/home.js" defer></script>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>user</h1>
+        <h2>Login</h2>
+        <form action="/proaula/Controllers/AdministradorSitioController.php" method="post">
+            <div class="input-group">
+                <label for="correo">Correo</label>
+                <input type="text" id="correo" name="correo" required>
+            </div>
+            <div class="input-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <button type="submit" id="accion" value="login" name="accion">Iniciar Sesión</button>
+            <button  class="btn-regresar"  onclick="window.history.back();">Regresar</button>
+        </form>
+        <p class="register-link">¿No tienes acceso? <a href="/src/seccions/user/register.html">Regístrate aquí</a></p>
+
+    </div>
+   
+    
+</body>
+</html>

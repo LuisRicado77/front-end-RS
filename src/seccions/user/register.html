@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <script src="../code/home.js" defer></script> <!-- Enlace a tu archivo JavaScript -->
+</head>
+<body>
+
+    <header></header>
+    <div class="register">
+        <h1>Registro de Usuario</h1>
+        <form action="#" method="POST">
+            <div class="register-group">
+                <label for="nombre">Nombre:</label>
+                <input class="input-register" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="register-group">
+                <label class="label-register" for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="register-group">
+                <label   class="label-register" for="password">Contraseña:</label>
+                <input class="input-register" type="password" id="password" name="password" required>
+            </div>
+            <button class="btn-register" type="submit">Registrarse</button>
+            <button  class="btn-regresar"  onclick="window.history.back();">Regresar</button>
+        </form>
+    </div>
+    <footer></footer>
+    
+</body>
+</html>
