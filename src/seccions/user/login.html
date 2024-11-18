@@ -10,9 +10,9 @@
 <body>
 
     <div class="login-container">
-        <h1>user</h1>
-        <h2>Login</h2>
-        <form action="/proaula/Controllers/AdministradorSitioController.php" method="post">
+        <h1>Usuario</h1>
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form" onsubmit="event.preventDefault(); login();">
             <div class="input-group">
                 <label for="correo">Correo</label>
                 <input type="text" id="correo" name="correo" required>
@@ -22,12 +22,35 @@
                 <input type="password" id="contrasena" name="contrasena" required>
             </div>
             <button type="submit" id="accion" value="login" name="accion">Iniciar Sesión</button>
-            <button  class="btn-regresar"  onclick="window.history.back();">Regresar</button>
+            <button class="btn-regresar" onclick="window.history.back();">Regresar</button>
         </form>
         <p class="register-link">¿No tienes acceso? <a href="/src/seccions/user/register.html">Regístrate aquí</a></p>
 
     </div>
-   
-    
+
+    <script>
+        async function login() {
+            const email = document.getElementById('correo').value;
+            const password = document.getElementById('contrasena').value;
+
+            const response = await fetch('http://localhost:3000/user/login', { // Asegúrate de que esta URL sea correcta
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            });
+
+            const data = await response.json();
+            
+            if (data.success) {
+                alert(data.message); // Muestra mensaje de éxito
+                // Redirige o realiza otras acciones
+            } else {
+                alert(data.message); // Muestra mensaje de error
+            }
+        }
+    </script>
+
 </body>
 </html>
